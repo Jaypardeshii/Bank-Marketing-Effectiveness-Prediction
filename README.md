@@ -123,3 +123,23 @@
 * **`Naive Bayes`**
 * **`SVM Classifier`**
 * **`Light Gradient Boost`**
+
+  # **Final Summary of Conclusion**
+
+- **Seven different algorithms** are used to solve this problem. Various results have been compared at the end of each model train. **Recall score** is used as one of the **performance matrix**.
+
+####**Why Recall score ?**
+
+- This is a marketing problem that involves significant resources, making it crucial to optimize results and save resources. The target variable is the **Term deposit**, which indicates whether a potential client says **yes or no** to a term deposit subscription following a phone call. In order to save time and effort, the objective is to focus on those clients who have a higher probability of subscribing to the term deposit. the aim is to predict as many **true positives(For Yes(1) Class)** as possible from the dataset, **making recall score a crucial performance metric**.
+
+- so, here we are more interested in correctly predicting the customers who said yes to the term deposit. the proportion of actual positives(Yes) that are correctly classified by the model. In our case, a high recall score for Yes means that we are correctly identifying customers who are more likely to subscribe to the term deposit. so, **we need to focus more on recall score of Yes (1)** and then precision and F1-Score.
+
+## **Conclusion**
+
+- After evaluating the performance of various machine learning algorithms on the given dataset, it was found that the Light Gradient Boost outperformed other algorithms such as KNN, SVM, Naive Bayes, Random forest and Logistic Regression. The hyperparameters of the Light Gradient Boost were tuned using GridSearchCV to find the best combination of parameters for optimal performance.
+
+- The accuracy score for the Light Gradient Boost was found to be 0.93, which is a good indication of the model's ability to perform well on new, unseen data. Additionally, the accuracy score for the train data was 0.95, which indicates that the model did not overfit to the training data.
+
+- Moreover, the Light Gradient Boost achieved a recall score of 0.91 and an F1-score of 0.94, which are slightly better than the corresponding scores for KNN and SVM. Therefore, based on the evaluation metrics and performance results, it can be concluded that the **Light Gradient Boost** is a suitable algorithm for this problem.
+
+- Using these results bank can specifically target clients and gain higher success in their endeavours. Saving a lot of time by not focusing on clients with less probability is yet another advantages of this project.
